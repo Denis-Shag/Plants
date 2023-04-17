@@ -1,0 +1,26 @@
+h1 {
+    @include font ( $weight: 700, $size: 4.5rem, $height: 5rem);
+}
+
+h2 {
+    @extend %font-add;
+    @include font ( $size: 4rem, $height: 5.2rem);
+}
+
+h3 {
+    @extend %font-main;
+    @include font ( $weight: 700, $size: 4rem, $height: 5rem);
+    color: $color-black;
+}
+
+h4 {
+    @extend %font-main;
+    @include font ( $weight: 700, $size: 4rem, $height: 4.8rem);
+    color: $color-black;
+}
+
+.text__main {
+    @extend %font-add;
+    @include font ( $size: 4rem, $height: 5.2rem);
+    color: $color-green;
+}

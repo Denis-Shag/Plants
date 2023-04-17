@@ -1,0 +1,33 @@
+.tools {
+    background-color: $color-light;
+}
+.tools__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.tools__content {
+    max-width: 605px;
+    padding-top: 161px;
+}
+.tools__text {
+    @extend %font-add;
+    @include font ( $size: 4rem, $height: 5.2rem);
+    color: $color-green;
+    max-width: 463px;
+    &_mod {
+        color: $color-orange;
+    }
+}
+.tools__text:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.tools__subtitle {
+    @extend %font-main;
+    @include font ( $size: 2rem, $height: 3rem);
+    color: $color-text;
+}
+
+.tools__image {
+    padding: 93px 0 94px;
+}

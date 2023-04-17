@@ -1,0 +1,19 @@
+.tags {
+    display: flex;
+    >* {
+        margin-right: 35px;
+    }
+}
+
+.tag {
+    padding: 12px 40px;
+    border: 1px solid $color-orange;
+    border-radius: 5px;
+    @include font ( $size: 2rem, $height:2.6rem);
+    @extend %font-add;
+    color: $color-orange;
+    &_selected {
+        background-color: $color-orange;
+        color: $color-light;
+    }
+}

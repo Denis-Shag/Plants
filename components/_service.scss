@@ -1,0 +1,41 @@
+.service {
+    padding: 40px 0 0;
+    background-color: $color-bg;
+}
+.service__block {
+    display: flex;
+    align-items: center;
+}
+
+.service__logo {
+    max-width: 306px;
+    margin: 0 0;
+}
+.box-radius {
+    border: 1px solid #E3E1D5;
+border-radius: 0 0 20px 20px;
+}
+.service__tags {
+    padding-left: 142px;
+}
+.service__image {
+    background-image: url(../Img/Service/Cactus.jpg);
+    border-radius: 20px 20px 0px 0px;
+    margin-bottom: - 5px;
+}
+.position_block {
+    padding-bottom: 121px;
+}
+.title {
+    color: $color-orange;
+    @include font ($weight: 700, $size:2rem, $height:2rem);
+    text-align: center;
+    margin: 10px 0;
+}
+.signature {
+    color: $color-service;
+    @include font ($size:1.6rem, $height:2rem);
+    text-align: center;
+    margin-bottom: 36px;
+
+}

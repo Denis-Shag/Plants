@@ -1,0 +1,15 @@
+.navigation {
+    display: flex;
+    font-size: 1.6rem;
+    line-height: 5.0rem;
+    font-family: 'Inika', serif;
+}
+.navigation__link {
+    list-style: none;
+    padding: 0 23px;
+    cursor: pointer;
+    @extend %transition;
+    &:hover {
+        color: $color-orange;
+    }
+}

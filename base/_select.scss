@@ -1,0 +1,17 @@
+.select_list { 
+    width: 250px;  
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: url("Img/accordion_btn.png") no-repeat right center;
+    outline: 0;
+   
+        background: #EDF2EC;
+        border-radius: 20px;
+        padding: 16px 40px;  
+  }
+  .select_list:not(:last-child) {
+    margin-bottom: 32px;
+  }
+ 

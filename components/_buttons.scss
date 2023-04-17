@@ -1,0 +1,22 @@
+.button {
+    @extend %font-main;
+    @include font ($size:1.6rem, $height:2rem);
+    background-color: $color-bg;
+    padding: 14px 27px;
+    border: 2px solid $color-orange;
+    border-radius: 10px;
+    transition: all .3s;
+    &_price {
+        @extend %font-add;
+        @include font ($weight: 700, $size:2rem, $height:2.6rem);
+        padding: 12px 30px;
+        background-color: $color-light;
+        color: $color-orange;
+    }
+    &:hover {
+        background: $color-orange;
+        color: $color-light;
+        border: 2px solid $color-orange;
+        border-radius: 10px;
+    }
+}
