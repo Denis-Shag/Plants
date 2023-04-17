@@ -1,0 +1,33 @@
+.promo {
+    background-color: $color-bg;
+    padding: 62px 0 0;
+}
+.promo__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.promo__image {
+    max-width: 448.8px;
+}
+.promo__content {
+    padding-left: 224px;
+}
+.promo__title {
+    color: $color-service;
+    margin: 0 0 42px;
+    &_colored {
+      color: $color-green;
+    }    
+}
+.promo__text {
+    @extend %font-main;
+    @include font($size: 2rem, $height: 3.5rem);
+    color: $color-text;
+    max-width: 526px;
+}
+
+.promo__buttons {
+    margin: 48px 0 94px;
+}
+

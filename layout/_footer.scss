@@ -1,0 +1,21 @@
+.footer_logo {
+    display: flex;
+    padding: 40px 0;
+}
+.gh_logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo_text {
+    @include font( $size:2rem, $height:5rem);   
+}
+.pad {
+    padding-right: 20px;
+}
+.rs-logo {
+    margin: 0 auto;
+}
+.organization-banned-in-Russia {
+    display: flex;
+}
