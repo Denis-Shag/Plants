@@ -1,17 +1,35 @@
 .promo {
     background-color: $color-bg;
     padding: 62px 0 0;
+    overflow: hidden;
 }
 .promo__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.promo__adapt {
+    display: flex;
+    @include media-tablet {
+        flex-direction: row-reverse;
+    }
+}
 .promo__image {
     max-width: 448.8px;
+    @include media-tablet {
+        max-width: 280px;
+        max-height: 254x;
+        padding-left: 42px;
+    }
 }
 .promo__content {
     padding-left: 224px;
+    @include media-tablet {
+        padding-left: 0;
+        :not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
 }
 .promo__title {
     color: $color-service;
@@ -25,9 +43,15 @@
     @include font($size: 2rem, $height: 3.5rem);
     color: $color-text;
     max-width: 526px;
+    @include media-laptop {
+        @include font($size: 1.6rem, $height: 2.5rem);
+    }
 }
 
 .promo__buttons {
     margin: 48px 0 94px;
+    @include media-laptop {
+        margin-top: 0;
+    }
 }
 

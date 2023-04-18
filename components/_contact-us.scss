@@ -1,12 +1,26 @@
 .contact-us {
     background-color: $color-bg;
     padding-top: 53px;
+    @include media-laptop {
+        padding-top: 0px;
+    }
 }
 .contact-us_wrapper {
     display: flex;
+    @include media-laptop {
+        flex-direction: column-reverse;
+        align-items: center;
+        .contact-us_text { order: 3;}
+        .form_addapt { order: 2;}
+        .woman_image { order: 1;}
+    }
 }
 .contact-us_text {
     padding-left: 113px;
+    @include media-laptop {
+        margin: 0 auto;
+        padding-left: 0;
+    }
     
 }
 .contact-us__text {
@@ -14,14 +28,19 @@
     @include font ($weight: 700, $size:4rem, $height:5.2rem);
     color: $color-green;
 
+
 }
 .form {
     padding-left: 64px;
     margin-top: 95px;
     width: 100%;
+    @include media-laptop {
+        padding-left: 0;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
 }
     
-
 input {
     background-color: $input-unactive;
     padding: 5px 0 5px 20px;
@@ -34,4 +53,12 @@ input {
         outline: 0;
 
     }
+    }
+
+    .woman {
+        @include media-laptop {
+            max-width: 200px;
+            max-height: 248.49px;
+            padding-top: 250px;
+        }
     }

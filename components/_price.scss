@@ -1,9 +1,15 @@
 .price {
     padding-bottom: 115px;
+    @include media-tablet {
+        padding-bottom: 88px;
+    }
 }
 
 .text_price {
     text-align: start;
+    @include media-tablet {
+        margin-bottom: 0;
+    }
 }
 .price_column {
     display: flex;
@@ -17,6 +23,11 @@
     border: 1px solid #E3E1D5;
     border-radius: 20px;
     padding: 34px 41px;
+    @include media-tablet {
+        max-width: 332px;
+        max-height: 282px;
+        padding-top: 50px 
+    }
 }
 
 .basics__text {
@@ -41,6 +52,9 @@
 .gardeners_text {
     text-align: end;
     margin-bottom: 38px;
+    @include media-tablet {
+        margin-top: 139px;
+    }
 }
 .price_image{
     padding-top: 39px;

@@ -1,26 +1,32 @@
 h1 {
     @include font ( $weight: 700, $size: 4.5rem, $height: 5rem);
+    @include media-laptop {
+        @include font ( $weight: 700, $size: 3.5rem, $height: 5rem)
+    }
 }
 
 h2 {
     @extend %font-add;
-    @include font ( $size: 4rem, $height: 5.2rem);
+    @include font ( $size: 3.5rem, $height: 5rem);
+    @include media-laptop {
+        @include font ($size: 3.5rem, $height: 4.6rem)
+    }
 }
 
 h3 {
     @extend %font-main;
     @include font ( $weight: 700, $size: 4rem, $height: 5rem);
     color: $color-black;
+    @include media-laptop {
+        @include font ($weight: 700, $size: 2.5rem, $height: 3.5rem)
+    }
 }
 
 h4 {
     @extend %font-main;
     @include font ( $weight: 700, $size: 4rem, $height: 4.8rem);
     color: $color-black;
-}
-
-.text__main {
-    @extend %font-add;
-    @include font ( $size: 4rem, $height: 5.2rem);
-    color: $color-green;
+    @include media-laptop {
+        @include font ($weight: 700, $size: 3.5rem, $height: 4.2rem)
+    }
 }

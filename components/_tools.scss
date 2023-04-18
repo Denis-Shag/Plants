@@ -4,16 +4,28 @@
 .tools__wrapper {
     display: flex;
     justify-content: space-between;
+    @include media-laptop {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .tools__content {
     max-width: 605px;
     padding-top: 161px;
+    @include media-laptop {
+        margin-top: 40px;
+        padding: 0;
+    }
 }
 .tools__text {
     @extend %font-add;
     @include font ( $size: 4rem, $height: 5.2rem);
     color: $color-green;
     max-width: 463px;
+    @include media-laptop {
+        margin: 0 auto;
+        text-align: center;
+    }
     &_mod {
         color: $color-orange;
     }
@@ -26,8 +38,23 @@
     @extend %font-main;
     @include font ( $size: 2rem, $height: 3rem);
     color: $color-text;
+    @include media-laptop {
+        @include font ( $size: 1.9rem, $height: 3rem);
+        text-align:start;
+    }
 }
 
 .tools__image {
     padding: 93px 0 94px;
+    @include media-laptop {
+        padding-top: 40px;
+    }
+}
+.houseplant__img {
+    width: 464px;
+    height: 479px;
+    @include media-laptop {
+        width: 250px;
+        height: 258px;
+    }
 }
