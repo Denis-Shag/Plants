@@ -1,4 +1,7 @@
 .layout-3-column {
     @include columns ($width: 10%);
     padding: 90px 0 0;
+    @include media-mobile {
+        padding: 40px 0 0;
+    }
 }

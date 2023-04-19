@@ -3,6 +3,7 @@
     >* {
         margin-right: 35px;
     }
+ 
 }
 
 .tag {
@@ -15,5 +16,10 @@
     &_selected {
         background-color: $color-orange;
         color: $color-light;
+    }
+    @include media-mobile {
+        padding: 8px 28px 7px;
+        @include font ( $size: 1.5rem, $height:2rem);
+        margin: 0 10px 9px 0;
     }
 }

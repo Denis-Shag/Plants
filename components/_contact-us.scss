@@ -25,8 +25,11 @@
 }
 .contact-us__text {
     @extend %font-add;
-    @include font ($weight: 700, $size:4rem, $height:5.2rem);
+    @include font ($weight: 700, $size: 4rem, $height: 5.2rem);
     color: $color-green;
+    @include media-mobile {
+        @include font ($weight: 700, $size: 2.5rem, $height: 3.3rem);
+    }
 
 
 }
@@ -60,5 +63,10 @@ input {
             max-width: 200px;
             max-height: 248.49px;
             padding-top: 250px;
+        }
+        @include media-mobile {
+            max-width: 100px;
+            max-height: 124.25px;
+            padding-top: 132px;
         }
     }

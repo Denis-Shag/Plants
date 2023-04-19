@@ -2,7 +2,7 @@
     padding: 40px 0 0;
     background-color: $color-bg;
     @include media-tablet {
-        padding: 0 0 32px;
+        padding: 0 0;
     }
 }
 .service__block {
@@ -12,6 +12,7 @@
         display: flex;
         flex-wrap: wrap;
     }
+ 
 }
 
 .service__logo {
@@ -28,22 +29,37 @@ border-radius: 0 0 20px 20px;
     @include media-tablet {
         padding-left: 0;
     }
+    @include media-mobile {
+        display: flex;
+        flex-wrap: wrap;
+    }   
 }
 .service__image {
     background-image: url(../Img/Service/Cactus.jpg);
     border-radius: 20px 20px 0px 0px;
     margin-bottom: - 5px;
+    @include media-tablet {
+        max-width: 281px;
+    }
+    @include media-mobile {
+        max-width: 279px;
+    }
 }
 .position_block {
     padding-bottom: 121px;
     @include media-tablet {
-        padding-bottom: 38px;
+        padding-bottom: 34px;
+        margin: 0 auto;
+        
     }
 }
 .text__main {
     color: $color-green;
     @include media-tablet {
         margin-top: 30px;
+    }
+    @include media-mobile {
+        max-width: 188px;
     }
 }
 .title {

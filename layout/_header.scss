@@ -1,6 +1,9 @@
 .header {
     background: $color-bg;
     padding: 42px 0;
+    @include media-mobile {
+        padding: 36px;
+    }
 }
 .header__wrapper {
     display: flex;

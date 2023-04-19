@@ -3,6 +3,9 @@
     @include media-laptop {
         padding: 33px 0 18px;
     }
+    @include media-mobile {
+        padding: 0px 0 7px;
+    }
 }
 .footer__wrapper {
     display: flex;
@@ -16,12 +19,19 @@
         :not(:last-child) {
             margin-bottom: 16px;
         }
+    @include media-mobile {
+        justify-content: center;
+        :not(:last-child) {
+            margin-bottom: 2px;
+        }    
+        }
     }
 }
 .gh_logo {
     display: flex;
     justify-content: space-between;
     align-items: center; 
+
 
 }
 .logo_text {

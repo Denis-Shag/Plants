@@ -1,5 +1,8 @@
 .tools {
     background-color: $color-light;
+    @include media-mobile {
+        padding-bottom: 30px;
+    }
 }
 .tools__wrapper {
     display: flex;
@@ -8,6 +11,7 @@
         flex-direction: column;
         align-items: center;
     }
+
 }
 .tools__content {
     max-width: 605px;
@@ -16,6 +20,10 @@
         margin-top: 40px;
         padding: 0;
     }
+    @include media-mobile {
+        margin-top: 30px; 
+    }
+
 }
 .tools__text {
     @extend %font-add;
@@ -26,12 +34,19 @@
         margin: 0 auto;
         text-align: center;
     }
+    @include media-mobile {
+        @include font ( $size: 2.5rem, $height: 3.3rem);
+        margin-bottom: 0px;
+    }
     &_mod {
         color: $color-orange;
     }
 }
 .tools__text:not(:last-child) {
     margin-bottom: 40px;
+    @include media-mobile {
+        margin: 0 auto;
+    }
 }
 
 .tools__subtitle {
@@ -42,12 +57,19 @@
         @include font ( $size: 1.9rem, $height: 3rem);
         text-align:start;
     }
+    @include media-mobile {
+        @include font ( $size: 1.5rem, $height: 2.5rem);
+        margin-bottom: 0;
+    }
 }
 
 .tools__image {
     padding: 93px 0 94px;
     @include media-laptop {
         padding-top: 40px;
+    }
+    @include media-mobile {
+        padding: 0 0;
     }
 }
 .houseplant__img {
