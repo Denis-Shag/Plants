@@ -9,6 +9,7 @@
 .tag {
     padding: 12px 40px;
     border: 1px solid $color-orange;
+    cursor: pointer;
     border-radius: 5px;
     @include font ( $size: 2rem, $height:2.6rem);
     @extend %font-add;

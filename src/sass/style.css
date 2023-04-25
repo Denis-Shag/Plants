@@ -355,6 +355,7 @@ h4 {
 .tag {
   padding: 12px 40px;
   border: 1px solid #E06733;
+  cursor: pointer;
   border-radius: 5px;
   font-style: normal;
   font-weight: 400;
